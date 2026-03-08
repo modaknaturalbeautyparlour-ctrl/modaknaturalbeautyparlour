@@ -65,7 +65,10 @@ const PlanDetails = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              {plan.duration} • Starting at ₹{plan.price}
+              {plan.duration} • {plan.originalPrice && (
+                <span style={{ textDecoration: 'line-through', marginRight: '10px' }}>₹{plan.originalPrice}</span>
+              )}
+              ₹{plan.price}
             </motion.p>
           </div>
         </div>

@@ -1,23 +1,47 @@
 export const plans = [
   {
-    id: 'glow-facial',
-    name: 'Glow Facial',
-    price: 499,
-    duration: '45 mins',
-    shortDescription: 'Rejuvenate your skin with our signature glow facial',
-    description: 'Experience the ultimate skin rejuvenation with our Glow Facial. This treatment is designed to cleanse, exfoliate, and nourish your skin, leaving you with a radiant, healthy glow.',
+    id: 'hydra-facial',
+    name: 'Hydra Facial',
+    price: 1999,
+    originalPrice: 5999,
+    duration: '60 mins',
+    shortDescription: 'Advanced skincare treatment - Reveal fresh, glowing, hydrated skin',
+    description: 'Experience our premium Hydra Facial treatment that provides deep cleansing, instant glow, and intense hydration. This advanced skincare procedure reduces fine lines, minimizes pores, and improves skin tone and elasticity.',
     includes: [
-      'Deep cleansing',
-      'Scrub',
-      'Face massage',
-      'Face pack',
-      'Moisturizer'
+      'Deep Cleaning',
+      'Vacuum-Assisted Microdermabrasion',
+      'Nutrient-Rich Serum Infusion',
+      'Intense Hydration',
+      'Instant glow & smooth texture',
+      'Reduces fine lines & pores'
     ],
     image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800',
     gallery: [
       'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400',
       'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400',
       'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400'
+    ],
+    popular: true
+  },
+  {
+    id: 'keratin-treatment',
+    name: 'Keratin Treatment',
+    price: 2999,
+    duration: '120 mins',
+    shortDescription: 'Transform your hair with professional keratin smoothing',
+    description: 'Get salon-quality smooth, shiny, and manageable hair with our professional Keratin Treatment. Perfect for frizzy and unmanageable hair.',
+    includes: [
+      'Deep cleansing shampoo',
+      'Keratin application',
+      'Heat sealing',
+      'Blow dry & styling',
+      'Lasts 3-4 months'
+    ],
+    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800',
+    gallery: [
+      'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400',
+      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400',
+      'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400'
     ],
     popular: false
   },
@@ -32,7 +56,8 @@ export const plans = [
       'Oil massage',
       'Hair mask',
       'Steam treatment',
-      'Hair wash'
+      'Hair wash',
+      'Conditioning'
     ],
     image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800',
     gallery: [
@@ -43,39 +68,19 @@ export const plans = [
     popular: false
   },
   {
-    id: 'manicure-pedicure',
-    name: 'Manicure & Pedicure',
-    price: 799,
-    duration: '90 mins',
-    shortDescription: 'Complete hand and foot care for beautiful nails',
-    description: 'Treat your hands and feet to our premium Manicure & Pedicure service. Enjoy complete nail care with relaxing massage and beautiful polish.',
+    id: 'bridal-makeup',
+    name: 'Bridal Makeup',
+    price: 4999,
+    duration: '3 hours',
+    shortDescription: 'Perfect bridal look by certified makeup artist',
+    description: 'Look absolutely stunning on your special day with our professional Bridal Makeup service by certified and experienced makeup artists. Complete bridal transformation for your big day.',
     includes: [
-      'Nail shaping',
-      'Cuticle care',
-      'Massage',
-      'Polish'
-    ],
-    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800',
-    gallery: [
-      'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400',
-      'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400',
-      'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=400'
-    ],
-    popular: false
-  },
-  {
-    id: 'bridal-glow-package',
-    name: 'Bridal Glow Package',
-    price: 2499,
-    duration: '4 hours',
-    shortDescription: 'Complete bridal makeover for your special day',
-    description: 'Look absolutely stunning on your special day with our comprehensive Bridal Glow Package. This all-inclusive package ensures you look and feel your best.',
-    includes: [
-      'Full facial',
-      'Hair spa',
-      'Manicure & pedicure',
-      'Makeup',
-      'Saree draping'
+      'HD Bridal Makeup',
+      'Hair styling',
+      'Saree draping',
+      'False lashes',
+      'Airbrush makeup option',
+      'Pre-bridal consultation'
     ],
     image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800',
     gallery: [
@@ -83,15 +88,59 @@ export const plans = [
       'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=400',
       'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=400'
     ],
-    popular: true
+    popular: false
+  },
+  {
+    id: 'hair-botox',
+    name: 'Hair Botox',
+    price: 3499,
+    duration: '90 mins',
+    shortDescription: 'Deep conditioning treatment for damaged hair',
+    description: 'Restore your hair with our Hair Botox treatment. This intensive conditioning therapy repairs damage, adds shine, and makes hair smooth and manageable.',
+    includes: [
+      'Deep conditioning',
+      'Protein treatment',
+      'Moisture restoration',
+      'Shine enhancement',
+      'Frizz control'
+    ],
+    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800',
+    gallery: [
+      'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400',
+      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400',
+      'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400'
+    ],
+    popular: false
+  },
+  {
+    id: 'balayage-hair-colour',
+    name: 'Balayage Hair Colour',
+    price: 3999,
+    duration: '150 mins',
+    shortDescription: 'Trendy hand-painted hair coloring technique',
+    description: 'Get the perfect sun-kissed look with our Balayage hair coloring. This hand-painted technique creates natural-looking highlights and dimension.',
+    includes: [
+      'Consultation',
+      'Hand-painted highlights',
+      'Toning',
+      'Hair treatment',
+      'Styling'
+    ],
+    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800',
+    gallery: [
+      'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400',
+      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400',
+      'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400'
+    ],
+    popular: false
   }
 ];
 
 export const addOns = [
   {
-    id: 'eyebrow-upperlip',
-    name: 'Eyebrow + Upper Lip',
-    price: 99
+    id: 'threading',
+    name: 'Threading (Eyebrow + Upper Lip)',
+    price: 150
   },
   {
     id: 'head-massage',
@@ -99,19 +148,24 @@ export const addOns = [
     price: 199
   },
   {
-    id: 'hair-spa-addon',
-    name: 'Hair Spa Add-on',
-    price: 499
+    id: 'd-tan',
+    name: 'D-Tan Treatment',
+    price: 399
   },
   {
     id: 'cleanup',
-    name: 'Cleanup',
-    price: 299
+    name: 'Cleanup Facial',
+    price: 499
   },
   {
-    id: 'mehendi',
-    name: 'Mehendi',
-    price: 399
+    id: 'waxing',
+    name: 'Full Arms & Legs Waxing',
+    price: 799
+  },
+  {
+    id: 'beard-styling',
+    name: 'Beard Styling (Men)',
+    price: 299
   }
 ];
 
@@ -120,27 +174,36 @@ export const testimonials = [
     id: 1,
     name: 'Priya Sharma',
     rating: 5,
-    text: 'Very professional home service. Highly recommended! The facial was amazing and Tanuja is very skilled.'
+    text: 'Amazing Hydra Facial experience at MODAK! My skin has never looked better. The staff is professional and the salon is very hygienic.'
   },
   {
     id: 2,
     name: 'Lakshmi Reddy',
     rating: 5,
-    text: 'Excellent service at home. Very convenient and the results are fantastic. Will definitely book again!'
+    text: 'Best keratin treatment in Vizag! My hair is so smooth and manageable now. Highly recommend MODAK Natural Beauty Care!'
   },
   {
     id: 3,
     name: 'Anjali Patel',
     rating: 5,
-    text: 'Best home salon service in Vizag! Professional, hygienic, and affordable. Loved the bridal package!'
+    text: 'The bridal makeup was perfect! The makeup artist is certified and very talented. Thank you MODAK for making my special day beautiful!'
   }
 ];
 
 export const serviceAreas = [
-  'Tuni',
-  'Payakaraopeta',
-  'Managavaram',
-  'Kakinada',
-  'Rajahmundry',
+  'Dondaparthy',
+  'MVP Colony',
+  'Seethammadhara',
+  'Gajuwaka',
+  'Madhurawada',
   'Vizag'
 ];
+
+export const salonInfo = {
+  name: 'MODAK Natural Beauty Care',
+  tagline: 'Redefining Style, Beauty & Confidence',
+  phone: '+91 63057 63388',
+  address: '13, 1st Floor, D.No: 46-15 Diamond Park Road, Dondaparthy',
+  city: 'Visakhapatnam',
+  pincode: '530016'
+};

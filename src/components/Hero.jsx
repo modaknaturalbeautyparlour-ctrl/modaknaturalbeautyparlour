@@ -4,7 +4,7 @@ const Hero = () => {
   const handleBookAppointment = (e) => {
     e.preventDefault();
     const message = "Hello, I would like to book an appointment for beauty services.";
-    const whatsappUrl = `https://wa.me/918121503097?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/916305763388?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -24,7 +24,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Tanuja
+            MODAK Natural Beauty Care
           </motion.h1>
           <motion.p 
             className="hero-subtitle"
@@ -32,7 +32,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            Work From Home Beauty Services
+            Redefining Style, Beauty & Confidence
           </motion.p>
           <motion.button 
             type="button"

@@ -11,13 +11,18 @@ const PlanCard = ({ plan, index }) => {
       transition={{ delay: index * 0.1 }}
       whileHover={{ y: -10 }}
     >
-      {plan.popular && <div className="badge-popular">Most Popular</div>}
+      {plan.popular && <div className="badge-popular">Special Offer</div>}
       <div className="plan-image">
         <img src={plan.image} alt={plan.name} />
       </div>
       <div className="plan-content">
         <h3 className="plan-name">{plan.name}</h3>
-        <p className="plan-price">Starting at ₹{plan.price}</p>
+        {plan.originalPrice && (
+          <p className="plan-original-price">
+            <span style={{ textDecoration: 'line-through', color: '#999' }}>₹{plan.originalPrice}</span>
+          </p>
+        )}
+        <p className="plan-price">₹{plan.price}</p>
         <p className="plan-description">{plan.shortDescription}</p>
         <Link to={`/plan/${plan.id}`} className="btn btn-outline">
           View Details

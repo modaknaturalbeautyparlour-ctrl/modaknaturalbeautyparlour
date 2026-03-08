@@ -1,20 +1,29 @@
-# Tanuja Home Salon Website
+# MODAK Natural Beauty Care Website
 
-A modern, premium, mobile-first salon booking website built with React + Vite.
+A modern, premium salon booking website for MODAK Natural Beauty Care in Visakhapatnam, built with React + Vite.
+
+## About
+
+MODAK Natural Beauty Care - Redefining Style, Beauty & Confidence
+
+Step into a world where beauty meets confidence. We provide premium salon and skincare services for both men and women, helping you look your best every day.
 
 ## Features
 
 ✨ **Premium Design**
-- Elegant green & white feminine beauty theme
+- Elegant green & white beauty theme
 - Smooth animations with Framer Motion
 - Mobile-first responsive design
 - Modern UI with rounded corners and soft shadows
 
 💅 **Services**
-- Glow Facial (₹499)
+- Hydra Facial (₹1999, was ₹5999) - Special Offer
+- Keratin Treatment (₹2999)
 - Hair Spa (₹699)
-- Manicure & Pedicure (₹799)
-- Bridal Glow Package (₹2499) - Most Popular
+- Bridal Makeup (₹4999)
+- Hair Botox (₹3499)
+- Balayage Hair Colour (₹3999)
+- And many more beauty services
 
 🎁 **Booking Features**
 - Dynamic plan details pages
@@ -52,12 +61,17 @@ npm run build
 
 ## Contact
 
-WhatsApp: 8121503097
+📞 Call / WhatsApp: +91 63057 63388
+
+📍 Address:
+13, 1st Floor, D.No: 46-15 Diamond Park Road
+Dondaparthy, Visakhapatnam - 530016
 
 ## Service Areas
 
-- Vizag
+- Dondaparthy
 - MVP Colony
 - Seethammadhara
 - Gajuwaka
 - Madhurawada
+- Vizag

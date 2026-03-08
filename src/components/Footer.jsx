@@ -1,4 +1,4 @@
-import { serviceAreas } from '../data/plans';
+import { serviceAreas, salonInfo } from '../data/plans';
 
 const Footer = () => {
   return (
@@ -6,9 +6,13 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>Tanuja Beauty Studio</h3>
-            <p>Work From Home Beauty Services</p>
-            <p className="footer-phone">📞 8121503097</p>
+            <h3>{salonInfo.name}</h3>
+            <p>{salonInfo.tagline}</p>
+            <p className="footer-phone">📞 {salonInfo.phone}</p>
+            <p className="footer-address">
+              📍 {salonInfo.address}<br />
+              {salonInfo.city} - {salonInfo.pincode}
+            </p>
           </div>
 
           <div className="footer-section">
@@ -31,7 +35,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Tanuja Beauty Studio. All rights reserved.</p>
+          <p>&copy; 2024 {salonInfo.name}. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -37,7 +37,7 @@ Phone: ${formData.phone}
 Address: ${formData.address}
 Total Price: ₹${grandTotal}`;
 
-    const whatsappUrl = `https://wa.me/918121503097?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/916305763388?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

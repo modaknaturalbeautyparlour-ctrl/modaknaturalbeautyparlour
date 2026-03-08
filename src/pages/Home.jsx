@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
 import PlanCard from '../components/PlanCard';
+import ContactForm from '../components/ContactForm';
 import { plans, testimonials } from '../data/plans';
 
 const Home = () => {
@@ -125,6 +126,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <ContactForm />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const WhatsAppFloat = () => {
   const handleClick = () => {
-    window.open('https://wa.me/918121503097', '_blank');
+    window.open('https://wa.me/916305763388', '_blank');
   };
 
   return (

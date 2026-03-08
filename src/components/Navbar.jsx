@@ -17,7 +17,8 @@ const Navbar = () => {
     >
       <div className="container">
         <Link to="/" className="logo">
-          <span className="logo-text">Tanuja Beauty Studio</span>
+          <img src="/Modhaklogo.jpg" alt="MODAK Natural Beauty Care" className="logo-image" />
+          <span className="logo-text">MODAK Natural Beauty Care</span>
         </Link>
         
         <button className="hamburger" onClick={toggleMenu}>
@@ -27,7 +28,7 @@ const Navbar = () => {
         </button>
 
         <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <a href="#services" onClick={() => setIsMenuOpen(false)}>Services</a>
+          <Link to="/services" onClick={() => setIsMenuOpen(false)}>All Services</Link>
           <a href="#gallery" onClick={() => setIsMenuOpen(false)}>Gallery</a>
           <a href="#testimonials" onClick={() => setIsMenuOpen(false)}>Reviews</a>
           <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
