@@ -57,6 +57,21 @@ const LoadingScreen = ({ onLoadingComplete }) => {
             animate={stage === 'split' ? 'exit' : 'initial'}
             transition={{ duration: 0.8, ease: "easeInOut" }}
           >
+            {/* Full Screen Logo Background - Top Half */}
+            {stage === 'reveal' && (
+              <motion.div
+                className="loading-bg-logo loading-bg-logo-top"
+                initial={{ opacity: 0, scale: 1.2 }}
+                animate={{ opacity: 0.15, scale: 1 }}
+                transition={{ delay: 0.1, duration: 0.8 }}
+              >
+                <img 
+                  src="/Modhaklogo.jpg" 
+                  alt="MODAK Logo Background" 
+                />
+              </motion.div>
+            )}
+
             <div className="loading-content">
               {stage === 'reveal' && (
                 <motion.div className="loading-logo">
@@ -114,7 +129,22 @@ const LoadingScreen = ({ onLoadingComplete }) => {
             initial={{ y: 0 }}
             animate={stage === 'split' ? { y: "100%" } : { y: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
-          />
+          >
+            {/* Full Screen Logo Background - Bottom Half */}
+            {stage === 'reveal' && (
+              <motion.div
+                className="loading-bg-logo loading-bg-logo-bottom"
+                initial={{ opacity: 0, scale: 1.2 }}
+                animate={{ opacity: 0.15, scale: 1 }}
+                transition={{ delay: 0.1, duration: 0.8 }}
+              >
+                <img 
+                  src="/Modhaklogo.jpg" 
+                  alt="MODAK Logo Background" 
+                />
+              </motion.div>
+            )}
+          </motion.div>
         </>
       )}
     </AnimatePresence>

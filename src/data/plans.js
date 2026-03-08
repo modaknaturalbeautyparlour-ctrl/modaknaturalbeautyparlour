@@ -37,10 +37,10 @@ export const plans = [
       'Blow dry & styling',
       'Lasts 3-4 months'
     ],
-    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800',
+    image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=800',
     gallery: [
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400',
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400',
+      'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400',
+      'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400',
       'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400'
     ],
     popular: false
@@ -59,9 +59,9 @@ export const plans = [
       'Hair wash',
       'Conditioning'
     ],
-    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800',
+    image: 'https://images.unsplash.com/photo-1560869713-7d0a29430803?w=800',
     gallery: [
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400',
+      'https://images.unsplash.com/photo-1560869713-7d0a29430803?w=400',
       'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400',
       'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400'
     ],
@@ -82,9 +82,9 @@ export const plans = [
       'Airbrush makeup option',
       'Pre-bridal consultation'
     ],
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=800',
+    image: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800',
     gallery: [
-      'https://images.unsplash.com/photo-1519741497674-611481863552?w=400',
+      'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400',
       'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=400',
       'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=400'
     ],
@@ -104,9 +104,9 @@ export const plans = [
       'Shine enhancement',
       'Frizz control'
     ],
-    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800',
+    image: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=800',
     gallery: [
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400',
+      'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=400',
       'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400',
       'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400'
     ],
@@ -126,9 +126,9 @@ export const plans = [
       'Hair treatment',
       'Styling'
     ],
-    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800',
+    image: 'https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=800',
     gallery: [
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400',
+      'https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=400',
       'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400',
       'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400'
     ],
