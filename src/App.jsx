@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
@@ -14,17 +14,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [showContent, setShowContent] = useState(false);
 
-  useEffect(() => {
-    // Check if user has already seen the loading screen in this session
-    const hasSeenLoading = sessionStorage.getItem('hasSeenLoading');
-    if (hasSeenLoading) {
-      setIsLoading(false);
-      setShowContent(true);
-    }
-  }, []);
-
   const handleLoadingComplete = () => {
-    sessionStorage.setItem('hasSeenLoading', 'true');
     setIsLoading(false);
     setTimeout(() => {
       setShowContent(true);
