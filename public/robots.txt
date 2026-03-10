@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://modaknaturalbeautycare.com/sitemap.xml
+Sitemap: https://www.modaknaturalbeautyparlour.in/sitemap.xml
