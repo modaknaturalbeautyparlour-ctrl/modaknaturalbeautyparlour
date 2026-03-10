@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
@@ -9,6 +9,36 @@ import Home from './pages/Home';
 import PlanDetails from './pages/PlanDetails';
 import Services from './pages/Services';
 import './App.css';
+
+function AppContent() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Handle hash navigation
+    if (location.hash) {
+      setTimeout(() => {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location]);
+
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/plan/:id" element={<PlanDetails />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+      <Footer />
+      <WhatsAppFloat />
+      <ScrollToTop />
+    </>
+  );
+}
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,19 +55,7 @@ function App() {
     <Router>
       <div className="App">
         {isLoading && <LoadingScreen onLoadingComplete={handleLoadingComplete} />}
-        {showContent && (
-          <>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/plan/:id" element={<PlanDetails />} />
-              <Route path="/services" element={<Services />} />
-            </Routes>
-            <Footer />
-            <WhatsAppFloat />
-            <ScrollToTop />
-          </>
-        )}
+        {showContent && <AppContent />}
       </div>
     </Router>
   );

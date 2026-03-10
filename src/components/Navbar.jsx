@@ -29,9 +29,9 @@ const Navbar = () => {
 
         <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <Link to="/services" onClick={() => setIsMenuOpen(false)}>All Services</Link>
-          <a href="#gallery" onClick={() => setIsMenuOpen(false)}>Gallery</a>
-          <a href="#testimonials" onClick={() => setIsMenuOpen(false)}>Reviews</a>
-          <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
+          <Link to="/#gallery" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
+          <Link to="/#testimonials" onClick={() => setIsMenuOpen(false)}>Reviews</Link>
+          <Link to="/#contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
         </div>
       </div>
     </motion.nav>
